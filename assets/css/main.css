@@ -2272,10 +2272,17 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+#banner .image.object {
+  width: 100%;
+  max-width: 360px;   /* controls size on desktop */
+  margin: 0 auto;    /* centers image on mobile */
+}
+
 #banner .image.object img {
-  max-width: 320px;   /* adjust size here */
   width: 100%;
   height: auto;
+  border-radius: 0.75em;
+  display: block;
 }
 
 
@@ -2321,3 +2328,19 @@ button,
       #banner .image.object img {
         border-radius: 0.75em;
       }
+@media screen and (max-width: 736px) {
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .image.object {
+    max-width: 280px;
+    margin-bottom: 1.5em;
+  }
+}
+
+#banner .image.object img {
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
