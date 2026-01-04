@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects | Muhammad Jabbar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Optional: small page-specific improvements (you can move to main.css) -->
+		<style>
+			.project-meta {
+				margin: 0.75em 0 0 0;
+				color: #7f888f;
+			}
+			.project-tags {
+				margin: 0.75em 0 0 0;
+				padding-left: 1.1em;
+			}
+			.project-tags li { margin-bottom: 0.35em; }
+		</style>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Muhammad's</strong> Portfolio</a>
+						<ul class="icons">
+						  <li>
+						    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener">
+						      <span class="label">LinkedIn</span>
+						    </a>
+						  </li>
+						  <li>
+						    <a href="https://github.com/YOUR-GITHUB-USERNAME" class="icon brands fa-github" target="_blank" rel="noopener">
+						      <span class="label">GitHub</span>
+						    </a>
+						  </li>
+						</ul>
+
+					</header>
+
+					<!-- Content -->
+					<section>
+						<header class="main">
+							<h1>Projects</h1>
+							<p class="project-meta">
+								A selection of projects across embedded systems, data engineering, and applied AI.
+							</p>
+						</header>
+
+						<!-- Project Cards -->
+						<div class="posts">
+
+							<!-- Project 1 -->
+							<article>
+								  <a class="image" href="#">
+								    <img src="images/Wireless image transfer with ESP32-S3.png"
+								         alt="Desktop application project" />
+								  </a>
+
+								<h3>Desktop Image Editor & Bluetooth Transfer to ESP32-S3</h3>
+								<p>
+									Built a Python desktop application that loads and edits images and transmits them wirelessly
+									over Bluetooth to an ESP32-S3 device. The tool supports core image operations such as cropping,
+									resizing, RGB conversion, zooming, combining images, and overlay composition—designed for a smooth
+									operator workflow and reliable embedded-side transfer.
+								</p>
+								<ul class="project-tags">
+									<li><strong>UI:</strong> PyQt5, Qt Designer</li>
+									<li><strong>Image Processing:</strong> OpenCV, Pillow</li>
+									<li><strong>Communication:</strong> Bluetooth (SimplePyBLE)</li>
+								</ul>
+<!-- 								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul> -->
+							</article>
+
+							<!-- Project 2 -->
+							<article>
+								  <a class="image" href="#">
+								    <img src="images/weather_data_pipeline.png"
+								         alt="Automated Weather Data Pipeline using OpenWeatherMap, Selenium, and Docker" />
+								  </a>
+								<h3>Automated Weather Data Pipeline (OpenWeatherMap + Selenium + Docker)</h3>
+								<p>
+									Developed an automated data pipeline that retrieves weather metrics (e.g., min/max temperature,
+									humidity, cloud coverage, wind speed) using the OpenWeatherMap API. The pipeline takes latitude
+									and longitude as input, resolves location context, stores results into structured CSV files, and
+									runs on a scheduled cycle every 60 minutes. The full workflow is containerized for portable,
+									reproducible deployment.
+								</p>
+								<ul class="project-tags">
+									<li><strong>Data Collection:</strong> Requests, Selenium, OpenWeatherMap API</li>
+									<li><strong>Data Handling:</strong> Pandas, CSV</li>
+									<li><strong>Deployment:</strong> Docker, scheduled execution</li>
+								</ul>
+<!-- 								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul> -->
+							</article>
+
+							<!-- Project 3 -->
+							<article>
+									<a class="image" href="#">
+								    <img src="images/HOQA_Temperature_Control_System.png"
+								         alt="Temperature control project" />
+								  </a>
+
+								<h3>HOQA Temperature Control System (Raspberry Pi + MAX31865)</h3>
+								<p>
+									Implemented a closed-loop temperature control system using a MAX31865 RTD sensor with a Raspberry Pi.
+									The controller monitors temperature continuously and automatically toggles a heater using configurable
+									thresholds (hysteresis) to maintain a stable operating range—improving safety and preventing frequent
+									switching.
+								</p>
+								<ul class="project-tags">
+									<li><strong>Platform:</strong> Raspberry Pi</li>
+									<li><strong>Sensor:</strong> MAX31865 temperature sensor</li>
+									<li><strong>Control:</strong> threshold-based heater control with hysteresis</li>
+								</ul>
+<!-- 								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul> -->
+							</article>
+
+							<!-- Project 4 (includes ONE internet image) -->
+							<article>
+								<a class="image" href="#">
+									<img
+										src="https://www.ikts.fraunhofer.de/en/departments/electronics_microsystems_biomedicine/systems_for_testing_analysis/cr_mobile_ultrasonic_rail_testing_system/jcr%3Acontent/contentPar/sectioncomponent_439694589/sectionParsys/textwithinlinedimage/imageComponent3/image.img.4col.large.jpg/1654865541664/26-3-SRE-bereit-fuer-Einsatz-am-Gleis.jpg"
+										alt="Ultrasonic rail inspection system"
+									/>
+								</a>
+								<h3>Railway Track Fault Detection (Ultrasonic Signals → CNN Classification)</h3>
+								<p>
+									Worked on an end-to-end workflow for railway fault detection using ultrasonic inspection data.
+									The project covered data acquisition, preprocessing and visualization to validate signal quality,
+									conversion of processed measurements into image representations, and training of CNN-based
+									classifiers for automated defect/state classification.
+								</p>
+								<ul class="project-tags">
+									<li><strong>Data:</strong> ultrasonic acquisition, preprocessing, visualization</li>
+									<li><strong>Modeling:</strong> MATLAB CNN classifiers (AlexNet, ResNet)</li>
+									<li><strong>Tooling:</strong> Deep Learning Toolbox, Image Processing Toolbox, Signal Processing Toolbox</li>
+								</ul>
+<!-- 								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul> -->
+							</article>
+
+							<!-- Project 5 -->
+							<article>
+								<a class="image" href="#">
+									<img src="images/LLM_Assisted_Literature_Survey_Automation .png" alt="Literature survey automation project" />
+								</a>
+								<h3>LLM-Assisted Literature Survey Automation (Face De-identification)</h3>
+								<p>
+									Designed and automated a literature survey pipeline focused on face de-identification research.
+									The workflow aggregates results from IEEE, ACM, and ScienceDirect, normalizes records into a unified
+									dataset, removes duplicates, and applies an AI-assisted filtering pipeline to rank and extract the
+									most relevant work. The process reduced ~8,000 papers to a shortlist of 24 highly relevant studies.
+								</p>
+								<ul class="project-tags">
+									<li><strong>Data Engineering:</strong> collection, preprocessing, deduplication, single clean CSV</li>
+									<li><strong>Automation:</strong> Academic Cloud API integration</li>
+									<li><strong>AI:</strong> OpenAI API for relevance filtering and summarization</li>
+								</ul>
+<!-- 								<ul class="actions">
+									<li><a href="#" class="button">Details</a></li>
+								</ul> -->
+							</article>
+
+						</div>
+					</section>
+
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="generic.html">Resume</a></li>
+							<li><a href="elements.html">Projects</a></li>
+						</ul>
+					</nav>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">
+							&copy; Muhammad Jabbar. Design: HTML5 UP.
+						</p>
+					</footer>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

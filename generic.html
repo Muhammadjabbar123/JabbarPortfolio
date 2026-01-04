@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+  Editorial by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Resume | Muhammad Jabbar</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Small page-specific styles (you can move these to main.css if you prefer) -->
+    <style>
+      .resume-wrap {
+        margin-top: 1.5em;
+      }
+      .resume-actions {
+        display: flex;
+        gap: 0.75em;
+        flex-wrap: wrap;
+        margin: 1em 0 1.5em 0;
+      }
+      /* Responsive PDF viewer */
+      .pdf-viewer {
+        width: 100%;
+        height: 85vh;
+        border: 1px solid rgba(210, 215, 217, 0.75);
+        border-radius: 0.5em;
+        background: #fff;
+      }
+      /* Slightly smaller on mobile */
+      @media (max-width: 736px) {
+        .pdf-viewer {
+          height: 75vh;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Muhammad's</strong> Portfolio</a>
+			<ul class="icons">
+			  <li>
+			    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener">
+			      <span class="label">LinkedIn</span>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="https://github.com/YOUR-GITHUB-USERNAME" class="icon brands fa-github" target="_blank" rel="noopener">
+			      <span class="label">GitHub</span>
+			    </a>
+			  </li>
+			</ul>
+
+          </header>
+
+          <!-- Content -->
+          <section class="resume-wrap">
+            <header class="main">
+              <h1>Resume</h1>
+              <p>
+                View my resume directly on this page, or download it using the button below.
+              </p>
+            </header>
+
+            <!-- ✅ Update this path to your actual resume PDF file -->
+            <!-- Example: put your PDF in: assets/resume/Muhammad_Jabbar_Resume.pdf -->
+            <div class="resume-actions">
+              <a class="button primary" href="assets/resume/Muhammad_Jabbar_Resume.pdf" target="_blank" rel="noopener">
+                Open in New Tab
+              </a>
+              <a class="button" href="assets/resume/Muhammad_Jabbar_Resume.pdf" download>
+                Download PDF
+              </a>
+            </div>
+
+            <!-- PDF Embedded Viewer -->
+            <iframe
+              class="pdf-viewer"
+              src="assets/resume/Muhammad_Jabbar_Resume.pdf#view=FitH"
+              title="Muhammad Jabbar Resume PDF"
+            ></iframe>
+
+            <!-- Fallback message if PDF embedding is blocked -->
+            <p style="margin-top: 1em;">
+              If the resume does not load in your browser, use the buttons above to open or download the PDF.
+            </p>
+          </section>
+
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">About Me</a></li>
+              <li><a href="generic.html">Resume</a></li>
+              <li><a href="elements.html">Projects</a></li>
+            </ul>
+          </nav>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; Muhammad Jabbar. Design: HTML5 UP.
+            </p>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
