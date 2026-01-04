@@ -2272,6 +2272,11 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+#banner .image.object img {
+  max-width: 320px;   /* adjust size here */
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -2316,29 +2321,3 @@ button,
       #banner .image.object img {
         border-radius: 0.75em;
       }
-
-
-      /* Banner image: responsive, no crop */
-#banner .image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain; /* or remove object-fit completely */
-}
-
-/* Remove the fixed height in portrait */
-@media screen and (orientation: portrait) {
-  #banner .image {
-    height: auto;
-    min-height: 0;
-    max-height: none;
-  }
-}
-
-/* If you want a max size, apply it to the CONTAINER (not img) */
-#banner .image.object {
-  max-width: 320px;
-  margin: 0 auto 2em auto; /* center */
-}
-#banner .image.object img {
-  max-width: 100%;
-}
