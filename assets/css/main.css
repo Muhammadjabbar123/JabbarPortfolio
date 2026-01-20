@@ -2273,7 +2273,7 @@ button,
     padding-top: 0; }
 
 #banner .image.object img {
-  max-width: 320px;   /* adjust size here */
+  max-width: 200px;   /* adjust size here */
   width: 100%;
   height: auto;
 }
